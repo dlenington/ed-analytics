@@ -9,7 +9,11 @@ export default function School() {
   return (
     <Card>
       <CardContent>
-        <Typography>School Name</Typography>
+        <Typography variant="h5">School Name</Typography>
+        <Typography>Student Survey</Typography>
+
+        <Typography>Parent Survey</Typography>
+        <Typography>Graduation Rate</Typography>
       </CardContent>
     </Card>
   );
