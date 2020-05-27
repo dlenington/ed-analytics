@@ -11,9 +11,12 @@ export default function School() {
       <CardContent>
         <Typography variant="h5">School Name</Typography>
         <Typography>Student Survey</Typography>
-
+        <Typography>5.5</Typography>
         <Typography>Parent Survey</Typography>
+        <Typography>8.2</Typography>
         <Typography>Graduation Rate</Typography>
+        <Typography>69%</Typography>
+        <Button>View all statistics</Button>
       </CardContent>
     </Card>
   );
