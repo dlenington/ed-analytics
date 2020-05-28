@@ -1,4 +1,7 @@
 import React from "react";
+
+//MUI Stuff
+import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
@@ -10,12 +13,20 @@ export default function School() {
     <Card>
       <CardContent>
         <Typography variant="h5">School Name</Typography>
-        <Typography>Student Survey</Typography>
-        <Typography>5.5</Typography>
-        <Typography>Parent Survey</Typography>
-        <Typography>8.2</Typography>
-        <Typography>Graduation Rate</Typography>
-        <Typography>69%</Typography>
+        <Grid container>
+          <Grid item>
+            <Typography>Student Survey</Typography>
+            <Typography>5.5</Typography>
+          </Grid>
+          <Grid item>
+            <Typography>Parent Survey</Typography>
+            <Typography>8.2</Typography>
+          </Grid>
+          <Grid item>
+            <Typography>Graduation Rate</Typography>
+            <Typography>69%</Typography>
+          </Grid>
+        </Grid>
         <Button>View all statistics</Button>
       </CardContent>
     </Card>
