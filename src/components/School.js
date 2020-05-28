@@ -13,7 +13,7 @@ export default function School() {
     <Card>
       <CardContent>
         <Typography variant="h5">School Name</Typography>
-        <Grid container>
+        <Grid container alignContent="center">
           <Grid item>
             <Typography>Student Survey</Typography>
             <Typography>5.5</Typography>
