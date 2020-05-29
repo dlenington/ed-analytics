@@ -13,19 +13,21 @@ export default function School() {
     <Card>
       <CardContent>
         <Typography variant="h5">School Name</Typography>
-        <Grid container>
-          <Grid item>
+        <Grid container xs={8}>
+          <Grid item sm />
+          <Grid item sm>
             <Typography>Student Survey</Typography>
             <Typography>5.5</Typography>
           </Grid>
-          <Grid item>
+          <Grid item sm>
             <Typography>Parent Survey</Typography>
             <Typography>8.2</Typography>
           </Grid>
-          <Grid item>
+          <Grid item sm>
             <Typography>Graduation Rate</Typography>
             <Typography>69%</Typography>
           </Grid>
+          <Grid item sm />
         </Grid>
         <Button>View all statistics</Button>
       </CardContent>
