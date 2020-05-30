@@ -29,9 +29,7 @@ export default function School() {
           </Grid>
           <Grid item sm />
         </Grid>
-        <Button position="absolute" right="1000px">
-          View all statistics
-        </Button>
+        <Button statsButton>View all statistics</Button>
       </CardContent>
     </Card>
   );

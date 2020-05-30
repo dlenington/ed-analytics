@@ -2,11 +2,12 @@
   margin: 80px auto 0 auto;
 }
 .card {
-  position: relative;
-  overflow: visible;
+  position: "relative";
+  display: "flex";
+  overflow: "visible";
 }
 
 .statsButton {
-  position: absolute;
-  right: 100px;
+  position: "absolute";
+  right: 80%;
 }
