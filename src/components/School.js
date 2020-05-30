@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 export default function School() {
   return (
     <Card>
-      <CardContent>
+      <CardContent card>
         <Typography variant="h5">School Name</Typography>
         <Grid container xs={8}>
           <Grid item sm />
@@ -29,7 +29,9 @@ export default function School() {
           </Grid>
           <Grid item sm />
         </Grid>
-        <Button>View all statistics</Button>
+        <Button position="absolute" right="1000px">
+          View all statistics
+        </Button>
       </CardContent>
     </Card>
   );
