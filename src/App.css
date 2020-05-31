@@ -5,6 +5,7 @@
   position: "relative";
   display: "flex";
   overflow: "visible";
+  max-width: 1200px;
 }
 
 .statsButton {
