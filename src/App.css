@@ -9,6 +9,5 @@
 }
 
 .statsButton {
-  position: "absolute";
-  right: 80%;
+  position: "relative";
 }
