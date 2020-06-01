@@ -3,12 +3,11 @@
 }
 .card {
   position: "relative";
-  display: "flex";
   overflow: "visible";
   max-width: 1200px;
 }
 
 .statsButton {
-  position: "relative";
+  position: "absolute";
   right: 80px;
 }
