@@ -29,8 +29,10 @@ export default function School() {
           </Grid>
           <Grid item sm />
         </Grid>
-        <Button statsButton>View all statistics</Button>
       </CardContent>
+      <CardActions style={{ justifyContent: "right" }}>
+        <Button>View all statistics</Button>
+      </CardActions>
     </Card>
   );
 }
