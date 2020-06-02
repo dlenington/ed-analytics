@@ -7,8 +7,17 @@ import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  button: {
+    position: "absolute",
+    right: "80px",
+  },
+});
 
 export default function School() {
+  const classes = useStyles();
   return (
     <Card>
       <CardContent card>
@@ -30,8 +39,8 @@ export default function School() {
           <Grid item sm />
         </Grid>
       </CardContent>
-      <CardActions style={{ justifyContent: "right" }}>
-        <Button>View all statistics</Button>
+      <CardActions>
+        <Button className={classes.button}>View all statistics</Button>
       </CardActions>
     </Card>
   );
