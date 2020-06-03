@@ -13,6 +13,10 @@ const useStyles = makeStyles({
   button: {
     position: "absolute",
     right: "80px",
+    marginBottom: "20px",
+  },
+  card: {
+    paddingBottom: "10px",
   },
 });
 
