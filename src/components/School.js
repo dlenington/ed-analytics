@@ -15,8 +15,8 @@ const useStyles = makeStyles({
     right: "80px",
     marginBottom: "20px",
   },
-  card: {
-    paddingBottom: "10px",
+  cardActions: {
+    padding: "20px",
   },
 });
 
@@ -43,7 +43,7 @@ export default function School() {
           <Grid item sm />
         </Grid>
       </CardContent>
-      <CardActions>
+      <CardActions className={classes.cardActions}>
         <Button className={classes.button}>View all statistics</Button>
       </CardActions>
     </Card>
