@@ -13,10 +13,13 @@ const useStyles = makeStyles({
   button: {
     position: "absolute",
     right: "80px",
-    marginBottom: "20px",
+    paddingBottom: "40px",
   },
   cardActions: {
     padding: "20px",
+  },
+  cardTitle: {
+    paddingTop: "16px",
   },
 });
 
@@ -25,7 +28,9 @@ export default function School() {
   return (
     <Card>
       <CardContent card>
-        <Typography variant="h5">School Name</Typography>
+        <Typography variant="h5" classes={classes.cardTitle}>
+          School Name
+        </Typography>
         <Grid container xs={8}>
           <Grid item sm />
           <Grid item sm>
