@@ -21,6 +21,12 @@ const useStyles = makeStyles({
   cardTitle: {
     paddingTop: "16px",
   },
+  numbers: {
+    font: "Medium 48px/63px Roboto",
+    letterSpacing: "0px",
+    color: "#707070",
+    opacity: 1,
+  },
 });
 
 export default function School() {
@@ -35,15 +41,15 @@ export default function School() {
           <Grid item sm />
           <Grid item sm>
             <Typography>Student Survey</Typography>
-            <Typography>5.5</Typography>
+            <Typography className={classes.numbers}>5.5</Typography>
           </Grid>
           <Grid item sm>
             <Typography>Parent Survey</Typography>
-            <Typography>8.2</Typography>
+            <Typography className={classes.numbers}>8.2</Typography>
           </Grid>
           <Grid item sm>
             <Typography>Graduation Rate</Typography>
-            <Typography>69%</Typography>
+            <Typography className={classes.numbers}>69%</Typography>
           </Grid>
           <Grid item sm />
         </Grid>
