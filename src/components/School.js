@@ -14,6 +14,11 @@ const useStyles = makeStyles({
     position: "absolute",
     right: "80px",
     paddingBottom: "40px",
+    font: "Medium 16px/21px Roboto",
+    fontSize: "16px",
+    letterSpacing: "0px",
+    color: "#0066E1",
+    opacity: "1",
   },
   cardActions: {
     padding: "20px",
@@ -22,7 +27,8 @@ const useStyles = makeStyles({
     paddingTop: "16px",
   },
   numbers: {
-    font: "Medium 48px/63px Roboto",
+    font: "Medium 48px Roboto",
+    fontSize: "48px",
     letterSpacing: "0px",
     color: "#707070",
     opacity: 1,
@@ -34,7 +40,7 @@ export default function School() {
   return (
     <Card>
       <CardContent card>
-        <Typography variant="h5" classes={classes.cardTitle}>
+        <Typography variant="h5" className={classes.cardTitle}>
           School Name
         </Typography>
         <Grid container xs={8}>
