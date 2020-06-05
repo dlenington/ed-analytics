@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   card: {
     position: "relative",
     overflow: "visible",
-    margin: "40px 0px 40px 0px",
+    padding: "40px 0px 40px 0px",
   },
   button: {
     position: "absolute",
