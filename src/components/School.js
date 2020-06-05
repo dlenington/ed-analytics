@@ -10,10 +10,14 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
+  card: {
+    position: "relative",
+    overflow: "visible",
+    margin: "40px 0px 40px 0px",
+  },
   button: {
     position: "absolute",
     right: "80px",
-    paddingBottom: "40px",
     font: "Medium 16px/21px Roboto",
     fontSize: "16px",
     letterSpacing: "0px",
@@ -38,8 +42,8 @@ const useStyles = makeStyles({
 export default function School() {
   const classes = useStyles();
   return (
-    <Card>
-      <CardContent card>
+    <Card className={classes.card}>
+      <CardContent>
         <Typography variant="h5" className={classes.cardTitle}>
           School Name
         </Typography>
