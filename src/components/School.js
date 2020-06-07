@@ -45,7 +45,7 @@ export default function School() {
     <Card className={classes.card}>
       <CardContent>
         <Typography variant="h5" className={classes.cardTitle}>
-          School Name
+          <SchoolIcon /> School Name
         </Typography>
         <Grid container xs={8}>
           <Grid item sm />
