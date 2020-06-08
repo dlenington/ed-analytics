@@ -1,4 +1,5 @@
 import React from "react";
+import SchoolIcon from "../icons/SchoolIcon";
 
 //MUI Stuff
 import Grid from "@material-ui/core/Grid";
