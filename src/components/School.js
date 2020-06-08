@@ -60,6 +60,7 @@ export default function School() {
           </Grid>
           <Grid item sm>
             <Typography>Graduation Rate</Typography>
+
             <Typography className={classes.numbers}>69%</Typography>
           </Grid>
           <Grid item sm />
