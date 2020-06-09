@@ -48,6 +48,9 @@ export default function School() {
         <Typography variant="h5" className={classes.cardTitle}>
           <SchoolIcon /> School Name
         </Typography>
+        <Typography variant="h5" className={classes.cardTitle}>
+          <SchoolIcon /> Statistics
+        </Typography>
         <Grid container xs={8}>
           <Grid item sm />
           <Grid item sm>
