@@ -1,5 +1,6 @@
 import React from "react";
 import SchoolIcon from "../icons/SchoolIcon";
+import BarChartIcon from "../icons/BarChartIcon";
 
 //MUI Stuff
 import Grid from "@material-ui/core/Grid";
@@ -49,7 +50,7 @@ export default function School() {
           <SchoolIcon /> School Name
         </Typography>
         <Typography variant="h5" className={classes.cardTitle}>
-          <SchoolIcon /> Statistics
+          <BarChartIcon /> Statistics
         </Typography>
         <Grid container xs={8}>
           <Grid item sm />
