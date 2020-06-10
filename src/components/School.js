@@ -1,6 +1,7 @@
 import React from "react";
 import SchoolIcon from "../icons/SchoolIcon";
 import BarChartIcon from "../icons/BarChartIcon";
+import ArrowIcon from "../icons/ArrowIcon";
 
 //MUI Stuff
 import Grid from "@material-ui/core/Grid";
@@ -71,7 +72,10 @@ export default function School() {
         </Grid>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        <Button className={classes.button}>View all statistics</Button>
+        <Button className={classes.button}>
+          View all statistics
+          <ArrowIcon />
+        </Button>
       </CardActions>
     </Card>
   );
