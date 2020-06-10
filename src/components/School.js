@@ -40,6 +40,11 @@ const useStyles = makeStyles({
     color: "#707070",
     opacity: 1,
   },
+  statsTitle: {
+    position: "absolute",
+    left: "200px",
+    paddingTop: "16px",
+  },
 });
 
 export default function School() {
@@ -50,7 +55,7 @@ export default function School() {
         <Typography variant="h5" className={classes.cardTitle}>
           <SchoolIcon /> School Name
         </Typography>
-        <Typography variant="h5" className={classes.cardTitle}>
+        <Typography variant="h5" className={classes.statsTitle}>
           <BarChartIcon /> Statistics
         </Typography>
         <Grid container xs={8}>
