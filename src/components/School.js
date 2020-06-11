@@ -51,13 +51,23 @@ export default function School() {
   return (
     <Card className={classes.card}>
       <CardContent>
-        <Typography variant="h5" className={classes.cardTitle}>
-          <SchoolIcon /> School Name
-        </Typography>
-        <Typography variant="h5" className={classes.statsTitle}>
-          <BarChartIcon /> Statistics
-        </Typography>
-        <Grid container xs={8}>
+        <Grid container s={5}>
+          <Grid item sm>
+            <Typography variant="h5" className={classes.cardTitle}>
+              <SchoolIcon /> School Name
+            </Typography>
+          </Grid>
+          <Grid item sm>
+            <Typography variant="h5" className={classes.cardTitle}>
+              <BarChartIcon /> Statistics
+            </Typography>
+          </Grid>
+          <Grid item sm />
+          <Grid item sm />
+          <Grid item sm />
+        </Grid>
+
+        <Grid container s={5}>
           <Grid item sm />
           <Grid item sm>
             <Typography>Student Survey</Typography>
