@@ -43,7 +43,6 @@ const useStyles = makeStyles({
   statsTitle: {
     position: "absolute",
     left: "200px",
-    paddingTop: "16px",
   },
 });
 
