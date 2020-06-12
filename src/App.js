@@ -13,7 +13,7 @@ function App() {
       <main className="container">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/details" component={detail} />
+          <Route exact path="/school" component={detail} />
         </Switch>
       </main>
     </Fragment>
