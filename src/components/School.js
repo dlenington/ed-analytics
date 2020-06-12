@@ -11,6 +11,7 @@ import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "@material-ui/core";
 
 const useStyles = makeStyles({
   card: {
@@ -86,10 +87,12 @@ export default function School() {
         </Grid>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        <Button className={classes.button}>
-          View all statistics
-          <ArrowIcon />
-        </Button>
+        <Link to="/school/:schoolId">
+          <Button className={classes.button}>
+            View all statistics
+            <ArrowIcon />
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );
