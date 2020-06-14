@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Graph from "../components/Graph";
+
+//MUI Stuff
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -32,5 +35,7 @@ export default function detail(props) {
       </Grid>
       <Grid item sm />
     </Grid>
+
+    <Graph/>
   );
 }
