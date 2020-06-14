@@ -23,7 +23,7 @@ export default function detail(props) {
                 <Typography variant="h2">{name}</Typography>
               </Grid>
               <Grid item sm>
-                {/* graphdata */}
+                {/* graph key */}
               <Grid/>
               <Grid item sm />
             </Grid>
