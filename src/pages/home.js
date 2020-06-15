@@ -1,11 +1,26 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import School from "../components/School";
 
-export default class Home extends Component {
+
+
+function Home() {
+const [schools, setSchools] = useState([]);
+
+
+useEffect(() => {
+  async function getSchools() {
+    const result = await axios("https://jsonplaceholder.typicode.com/users")
+    setSchools(result.data);
+  }
+
+  getSchools();
+  })
+
   render() {
     return (
       <Grid container spacing={2}>
@@ -16,3 +31,5 @@ export default class Home extends Component {
     );
   }
 }
+
+export default Home;
