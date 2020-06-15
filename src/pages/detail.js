@@ -16,26 +16,20 @@ export default function detail(props) {
     school: { name },
   } = props;
   return (
+    <Typography variant="h2">School Name</Typography>
+    <Button>Question Icon</Button>
     <Grid>
       <Grid item sm />
       <Grid item sm>
         <Card>
           <CardContent>
-            <Grid>
-              <Grid item sm>
-                <Typography variant="h2">{name}</Typography>
-              </Grid>
-              <Grid item sm>
-                {/* graph key */}
-              <Grid/>
-              <Grid item sm />
-            </Grid>
+            
           </CardContent>
         </Card>
-      </Grid>
+      
       <Grid item sm />
-    </Grid>
-
+      </Grid>
+      </Grid>
     <Graph/>
   );
 }
