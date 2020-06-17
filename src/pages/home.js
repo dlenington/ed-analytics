@@ -19,13 +19,13 @@ useEffect(() => {
   }
 
   getSchools();
-  })
+  });
 
   render() {
     return (
       <Grid container spacing={2}>
         <Grid item sm={12} xs={12}>
-          <School />
+          {schools.map(school => <School key={school.id} school={school}/>)}
         </Grid>
       </Grid>
     );
