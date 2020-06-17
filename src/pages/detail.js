@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import Graph from "../components/Graph";
 
 //MUI Stuff
@@ -16,20 +16,20 @@ export default function detail(props) {
     school: { name },
   } = props;
   return (
-    <Typography variant="h2">School Name</Typography>
-    <Button>Question Icon</Button>
-    <Grid>
-      <Grid item sm />
-      <Grid item sm>
-        <Card>
-          <CardContent>
-            
-          </CardContent>
-        </Card>
-      
-      <Grid item sm />
+    <Fragment>
+      <Typography variant="h2">{name}</Typography>
+      <Button>Question Icon</Button>
+      <Grid>
+        <Grid item sm />
+        <Grid item sm>
+          <Card>
+            <CardContent></CardContent>
+          </Card>
+
+          <Grid item sm />
+        </Grid>
       </Grid>
-      </Grid>
-    <Graph/>
+      <Graph />
+    </Fragment>
   );
 }

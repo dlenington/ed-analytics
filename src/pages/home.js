@@ -6,30 +6,27 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import School from "../components/School";
 
-
-
 function Home() {
-const [schools, setSchools] = useState([]);
+  const [schools, setSchools] = useState([]);
 
+  useEffect(() => {
+    async function getSchools() {
+      const result = await axios("https://jsonplaceholder.typicode.com/users");
+      setSchools(result.data);
+    }
 
-useEffect(() => {
-  async function getSchools() {
-    const result = await axios("https://jsonplaceholder.typicode.com/users")
-    setSchools(result.data);
-  }
-
-  getSchools();
+    getSchools();
   });
 
-  render() {
-    return (
-      <Grid container spacing={2}>
-        <Grid item sm={12} xs={12}>
-          {schools.map(school => <School key={school.id} school={school}/>)}
-        </Grid>
+  return (
+    <Grid container spacing={2}>
+      <Grid item sm={12} xs={12}>
+        {schools.map((school) => (
+          <School key={school.id} school={school} />
+        ))}
       </Grid>
-    );
-  }
+    </Grid>
+  );
 }
 
 export default Home;

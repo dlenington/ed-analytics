@@ -47,15 +47,19 @@ const useStyles = makeStyles({
   },
 });
 
-export default function School() {
+export default function School(props) {
   const classes = useStyles();
+  const {
+    school: { name },
+  } = props;
+
   return (
     <Card className={classes.card}>
       <CardContent>
         <Grid container s={5}>
           <Grid item sm>
             <Typography variant="h5" className={classes.cardTitle}>
-              <SchoolIcon /> School Name
+              <SchoolIcon /> {name}
             </Typography>
           </Grid>
           <Grid item sm>
