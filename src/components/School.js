@@ -91,12 +91,12 @@ export default function School(props) {
         </Grid>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        <Link to="/school/:schoolId">
-          <Button className={classes.button}>
+        <Button className={classes.button}>
+          <Link to="/details">
             View all statistics
             <ArrowIcon />
-          </Button>
-        </Link>
+          </Link>
+        </Button>
       </CardActions>
     </Card>
   );
