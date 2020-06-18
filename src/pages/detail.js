@@ -17,7 +17,7 @@ export default function detail(props) {
   } = props;
   return (
     <Fragment>
-      <Typography variant="h2">{name}</Typography>
+      <Typography variant="h2">School Name</Typography>
       <Button>Question Icon</Button>
       <Grid>
         <Grid item sm />
