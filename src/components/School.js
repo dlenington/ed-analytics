@@ -18,6 +18,7 @@ const useStyles = makeStyles({
     position: "relative",
     overflow: "visible",
     padding: "40px 0px 40px 0px",
+    margin: "40px auto 20px",
   },
   button: {
     position: "absolute",
