@@ -1,13 +1,7 @@
+body {
+  background-color: #eeeeee;
+}
 .container {
   margin: 80px auto 0 auto;
-}
-.card {
-  position: "relative";
-  overflow: "visible";
-  max-width: 1200px;
-}
-
-.statsButton {
-  position: "absolute";
-  margin-left: 80px;
+  max-width: 1366px;
 }
