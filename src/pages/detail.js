@@ -11,25 +11,23 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "@material-ui/core";
 
-export default function detail(props) {
-  const {
-    school: { name },
-  } = props;
-  return (
-    <Fragment>
-      <Typography variant="h2">School Name</Typography>
-      <Button>Question Icon</Button>
-      <Grid>
-        <Grid item sm />
-        <Grid item sm>
-          <Card>
-            <CardContent></CardContent>
-          </Card>
+const useStyles = makeStyles({
+  title: {
+    margin: "80px auto 0 auto",
+  },
+});
 
-          <Grid item sm />
-        </Grid>
-      </Grid>
-      <Graph />
-    </Fragment>
+function Detail(props) {
+  // const {
+  //   school: { name },
+  // } = props;
+  const classes = useStyles();
+
+  return (
+    <Typography className={classes.title} variant="h2">
+      School Name
+    </Typography>
   );
 }
+
+export default Detail;

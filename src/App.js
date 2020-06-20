@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import { Route, Switch } from "react-router-dom";
-import detail from "./pages/detail";
+import Detail from "./pages/detail";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <main className="container">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/school" component={detail} />
+          <Route exact path="/school" component={Detail} />
         </Switch>
       </main>
     </Fragment>
