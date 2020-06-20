@@ -15,6 +15,9 @@ const useStyles = makeStyles({
   title: {
     margin: "80px auto 0 auto",
   },
+  card: {
+    margin: "40px auto 0",
+  },
 });
 
 function Detail(props) {
@@ -24,9 +27,17 @@ function Detail(props) {
   const classes = useStyles();
 
   return (
-    <Typography className={classes.title} variant="h2">
-      School Name
-    </Typography>
+    <Grid container>
+      <Grid item sm />
+      <Grid item>
+        <Card className={classes.card}>
+          <CardContent>
+            <Typography variant="h4">School Name</Typography>
+          </CardContent>
+        </Card>
+      </Grid>
+      <Grid item sm />
+    </Grid>
   );
 }
 
