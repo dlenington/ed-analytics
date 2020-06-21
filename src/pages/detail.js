@@ -25,9 +25,7 @@ const useStyles = makeStyles({
 
 //use context api to pass school object to graph components (further nested)
 function Detail(props) {
-  // const {
-  //   school: { name },
-  // } = props;
+  const { name } = props.location.state;
   const classes = useStyles();
 
   return (
@@ -36,7 +34,7 @@ function Detail(props) {
       <Grid item>
         <Card className={classes.card}>
           <CardContent>
-            <Typography variant="h4">School Name</Typography>
+            <Typography variant="h4">{name}</Typography>
             <Chart
               width={"500px"}
               height={"300px"}

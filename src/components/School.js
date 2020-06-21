@@ -92,7 +92,14 @@ export default function School(props) {
         </Grid>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        <Link to="/school">
+        <Link
+          to={{
+            pathname: "/school",
+            state: {
+              name: props.school.name,
+            },
+          }}
+        >
           <Button className={classes.button}>
             View all statistics
             <ArrowIcon />
