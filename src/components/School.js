@@ -92,7 +92,7 @@ export default function School(props) {
         </Grid>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        <Link to="/details">
+        <Link to="/school">
           <Button className={classes.button}>
             View all statistics
             <ArrowIcon />
