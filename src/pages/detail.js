@@ -14,7 +14,7 @@ import { Link } from "@material-ui/core";
 
 const useStyles = makeStyles({
   title: {
-    margin: "80px auto 0 auto",
+    margin: "40px auto 0 auto",
   },
   card: {
     margin: "40px auto 0",
@@ -32,9 +32,11 @@ function Detail(props) {
     <Grid container>
       <Grid item sm />
       <Grid item>
+        <Typography className={classes.title} variant="h4">
+          {name}
+        </Typography>
         <Card className={classes.card}>
           <CardContent>
-            <Typography variant="h4">{name}</Typography>
             <Chart
               width={"500px"}
               height={"300px"}
