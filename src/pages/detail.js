@@ -1,6 +1,7 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment, useEffect } from "react";
 import { Chart } from "react-google-charts";
 import Graph from "../components/Graph";
+import axios from "axios";
 
 //MUI Stuff
 import Grid from "@material-ui/core/Grid";
@@ -25,8 +26,18 @@ const useStyles = makeStyles({
 
 //use context api to pass school object to graph components (further nested)
 function Detail(props) {
+  const [stats, setStats] = useState([]);
   const { name } = props.location.state;
   const classes = useStyles();
+
+  useEffect(() => {
+    async function getStats() {
+      const result = await axios("https://jsonplaceholder.typicode.com/posts");
+      setStats(result.data);
+    }
+
+    getStats();
+  });
 
   return (
     <Grid container>
@@ -35,29 +46,31 @@ function Detail(props) {
         <Typography className={classes.title} variant="h4">
           {name}
         </Typography>
-        <Card className={classes.card}>
-          <CardContent>
-            <Chart
-              width={"500px"}
-              height={"300px"}
-              chartType="Bar"
-              loader={<div>Loading Chart</div>}
-              data={[
-                ["Year", "Student", "Parent", "Average"],
-                ["2014", 1000, 400, 600],
-              ]}
-              options={{
-                // Material design options
-                chart: {
-                  title: "Student/Parent Survey",
-                  subtitle: "",
-                },
-              }}
-              // For tests
-              rootProps={{ "data-testid": "2" }}
-            />
-          </CardContent>
-        </Card>
+        {stats.map((stat) => {
+          <Card className={classes.card}>
+            <CardContent>
+              <Chart
+                width={"500px"}
+                height={"300px"}
+                chartType="Bar"
+                loader={<div>Loading Chart</div>}
+                data={[
+                  ["Year", "Student", "Parent", "Average"],
+                  ["2014", 1000, 400, 600],
+                ]}
+                options={{
+                  // Material design options
+                  chart: {
+                    title: stat.title,
+                    subtitle: "",
+                  },
+                }}
+                // For tests
+                rootProps={{ "data-testid": "2" }}
+              />
+            </CardContent>
+          </Card>;
+        })}
       </Grid>
       <Grid item sm />
     </Grid>
