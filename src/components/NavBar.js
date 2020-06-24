@@ -4,6 +4,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import { makeStyles } from "@material-ui/core";
+import Logo from "../icons/Logo";
+
 const useStyles = makeStyles({
   nav: {
     background: "#57C1B2 0% 0% no-repeat padding-box",
@@ -21,6 +23,7 @@ const useStyles = makeStyles({
     paddingTop: "20px",
     paddingBottom: "20px",
   },
+  logo: {},
 });
 
 export default function NavBar() {
@@ -29,7 +32,9 @@ export default function NavBar() {
     <AppBar>
       <Toolbar className={classes.nav}>
         <Fragment>
-          <Button className={classes.navText}>Home</Button>
+          <Button className={classes.navText}>
+            <Logo className={classes.logo} />
+          </Button>
         </Fragment>
       </Toolbar>
     </AppBar>
