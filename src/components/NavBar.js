@@ -5,6 +5,7 @@ import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import { makeStyles } from "@material-ui/core";
 import Logo from "../icons/Logo";
+import MenuIcon from "../icons/MenuIcon";
 
 const useStyles = makeStyles({
   nav: {
@@ -32,6 +33,9 @@ export default function NavBar() {
     <AppBar>
       <Toolbar className={classes.nav}>
         <Fragment>
+          <Button>
+            <MenuIcon />
+          </Button>
           <Button className={classes.navText}>
             <Logo className={classes.logo} />
           </Button>
