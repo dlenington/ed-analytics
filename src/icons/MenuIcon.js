@@ -18,7 +18,7 @@ export default function BarChartIcon() {
         d="M3,19.333H23V17.111H3v2.222Zm0-5.556H23V11.556H3v2.222ZM3,6V8.222H23V6Z"
         transform="translate(0 0)"
         fill="#fff"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         opacity="0.836"
       />
     </SvgIcon>

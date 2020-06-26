@@ -16,7 +16,7 @@ function Home() {
     }
 
     getSchools();
-  });
+  }, [schools]);
 
   return (
     <Grid container spacing={2}>
