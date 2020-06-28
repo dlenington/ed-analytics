@@ -92,19 +92,19 @@ export default function School(props) {
         </Grid>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        {/* <Link
+        <Link
           to={{
             pathname: "/school",
             state: {
               name: props.school.name,
             },
           }}
-        > */}
-        <Button className={classes.button}>
-          View all statistics
-          <ArrowIcon />
-        </Button>
-        {/* </Link> */}
+        >
+          <Button className={classes.button}>
+            View all statistics
+            <ArrowIcon />
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );
