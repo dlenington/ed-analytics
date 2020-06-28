@@ -3,9 +3,10 @@ import React, { Component, Fragment } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
-import { makeStyles, Link } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import Logo from "../icons/Logo";
 import MenuIcon from "../icons/MenuIcon";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   nav: {
