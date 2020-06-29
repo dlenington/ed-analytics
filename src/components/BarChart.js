@@ -23,7 +23,7 @@ function BarChart(props) {
           width={"500px"}
           height={"300px"}
           chartType="Bar"
-          loader={<div>Loading Chart</div>}
+          loader={<div>Loading Statistics</div>}
           data={[
             ["Year", "Student", "Parent", "Average"],
             ["2014", 1000, 400, 600],
