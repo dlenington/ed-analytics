@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 
 function Detail(props) {
   const [stats, setStats] = useState([]);
-  // const { name } = props.location.state;
+  const { name } = props.location.state;
   const classes = useStyles();
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function Detail(props) {
       <Grid item sm />
       <Grid item>
         <Typography className={classes.title} variant="h4">
-          {/* {name} */}
+          {name}
         </Typography>
         {stats.map((stat) => (
           <Chart key={stat.id} stat={stat} />
