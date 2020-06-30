@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import { makeStyles } from "@material-ui/core";
 import Logo from "../icons/Logo";
-import Menu from "./Menu";
+import MyMenu from "./MyMenu";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -34,7 +34,7 @@ export default function NavBar() {
     <AppBar>
       <Toolbar className={classes.nav}>
         <Fragment>
-          <Menu />
+          <MyMenu />
           <Link to="/">
             <Button className={classes.navText}>
               <Logo className={classes.logo} />

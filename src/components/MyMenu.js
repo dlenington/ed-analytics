@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
-import Menu from "@material-ui/core/MenuItem";
+import MenuItem from "@material-ui/core/MenuItem";
+import Menu from "@material-ui/core/Menu";
+
+import MenuIcon from "../icons/MenuIcon";
 
 export default function MyMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
