@@ -9,6 +9,9 @@ import MyMenu from "./MyMenu";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
+  grow: {
+    flexGrow: 1,
+  },
   nav: {
     background: "#57C1B2 0% 0% no-repeat padding-box",
     boxShadow: "0px 1px 3px #00000066",
@@ -23,9 +26,9 @@ const useStyles = makeStyles({
     opacity: 1,
     paddingTop: "20px",
     paddingBottom: "20px",
-    right: "100px",
+    // right: "100px",
   },
-  logo: {},
+  logo: { flexGrow: 3, color: "#EEEEEE" },
 });
 
 export default function NavBar() {
@@ -33,20 +36,19 @@ export default function NavBar() {
   return (
     <AppBar>
       <Toolbar className={classes.nav}>
-        <Fragment>
-          {/* <MyMenu /> */}
-          <Link to="/">
-            <Button className={classes.navText}>
-              <Logo className={classes.logo} />
-            </Button>
-          </Link>
-          <div className={classes.navText}>
-            <Typography>Home</Typography>
-            <Typography>Profile</Typography>
-            <Typography>Login</Typography>
-            <Typography>Signup</Typography>
-          </div>
-        </Fragment>
+        {/* <MyMenu /> */}
+        <Link to="/">
+          <Button className={classes.logo}>
+            <Logo />
+          </Button>
+        </Link>
+        {/* <div className={classes.navText}> */}
+        <div className={classes.grow}></div>
+        <Button className={classes.navText}>Home</Button>
+        <Button className={classes.navText}>Profile</Button>
+        <Button className={classes.navText}>Login</Button>
+        <Button className={classes.navText}>Signup</Button>
+        {/* </div> */}
       </Toolbar>
     </AppBar>
   );
