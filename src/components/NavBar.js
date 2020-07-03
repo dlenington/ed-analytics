@@ -3,7 +3,7 @@ import React, { Component, Fragment } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
 import Logo from "../icons/Logo";
 import MyMenu from "./MyMenu";
 import { Link } from "react-router-dom";
@@ -21,9 +21,9 @@ const useStyles = makeStyles({
     letterSpacing: "0px",
     color: "#EEEEEE",
     opacity: 1,
-    justifyContent: "right",
     paddingTop: "20px",
     paddingBottom: "20px",
+    right: "100px",
   },
   logo: {},
 });
@@ -34,12 +34,18 @@ export default function NavBar() {
     <AppBar>
       <Toolbar className={classes.nav}>
         <Fragment>
-          <MyMenu />
+          {/* <MyMenu /> */}
           <Link to="/">
             <Button className={classes.navText}>
               <Logo className={classes.logo} />
             </Button>
           </Link>
+          <div className={classes.navText}>
+            <Typography>Home</Typography>
+            <Typography>Profile</Typography>
+            <Typography>Login</Typography>
+            <Typography>Signup</Typography>
+          </div>
         </Fragment>
       </Toolbar>
     </AppBar>

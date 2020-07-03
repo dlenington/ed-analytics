@@ -32,6 +32,7 @@ export default function MyMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
+        <MenuItem onClick={handleClose}>Home</MenuItem>
         <MenuItem onClick={handleClose}>Profile</MenuItem>
         <MenuItem onClick={handleClose}>Login</MenuItem>
         <MenuItem onClick={handleClose}>Signup</MenuItem>
