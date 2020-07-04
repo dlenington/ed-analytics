@@ -44,10 +44,18 @@ export default function NavBar() {
         </Link>
         {/* <div className={classes.navText}> */}
         <div className={classes.grow}></div>
-        <Button className={classes.navText}>Home</Button>
-        <Button className={classes.navText}>Profile</Button>
-        <Button className={classes.navText}>Login</Button>
-        <Button className={classes.navText}>Signup</Button>
+        <Link to="/">
+          <Button className={classes.navText}>Home</Button>
+        </Link>
+        <Link to="/profile">
+          <Button className={classes.navText}>Profile</Button>
+        </Link>
+        <Link to="/profile">
+          <Button className={classes.navText}>Login</Button>
+        </Link>
+        <Link to="/profile">
+          <Button className={classes.navText}>Signup</Button>
+        </Link>
         {/* </div> */}
       </Toolbar>
     </AppBar>
