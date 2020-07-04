@@ -42,7 +42,6 @@ export default function NavBar() {
             <Logo />
           </Button>
         </Link>
-        {/* <div className={classes.navText}> */}
         <div className={classes.grow}></div>
         <Link to="/">
           <Button className={classes.navText}>Home</Button>
@@ -50,13 +49,12 @@ export default function NavBar() {
         <Link to="/profile">
           <Button className={classes.navText}>Profile</Button>
         </Link>
-        <Link to="/profile">
+        <Link to="/login">
           <Button className={classes.navText}>Login</Button>
         </Link>
-        <Link to="/profile">
+        <Link to="/signup">
           <Button className={classes.navText}>Signup</Button>
         </Link>
-        {/* </div> */}
       </Toolbar>
     </AppBar>
   );
