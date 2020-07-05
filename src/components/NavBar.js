@@ -26,9 +26,11 @@ const useStyles = makeStyles({
     opacity: 1,
     paddingTop: "20px",
     paddingBottom: "20px",
+    textDecoration: "none",
     // right: "100px",
   },
   logo: { flexGrow: 3, color: "#EEEEEE" },
+  navLink: { textDecoration: "none" },
 });
 
 export default function NavBar() {
@@ -43,16 +45,16 @@ export default function NavBar() {
           </Button>
         </Link>
         <div className={classes.grow}></div>
-        <Link to="/">
+        <Link to="/" className={classes.navLink}>
           <Button className={classes.navText}>Home</Button>
         </Link>
-        <Link to="/profile">
+        <Link to="/profile" className={classes.navLink}>
           <Button className={classes.navText}>Profile</Button>
         </Link>
-        <Link to="/login">
+        <Link to="/login" className={classes.navLink}>
           <Button className={classes.navText}>Login</Button>
         </Link>
-        <Link to="/signup">
+        <Link to="/signup" className={classes.navLink}>
           <Button className={classes.navText}>Signup</Button>
         </Link>
       </Toolbar>
