@@ -19,8 +19,8 @@ const useStyles = makeStyles({
     opacity: 1,
   },
   navText: {
-    font: "Medium 24px/32px Roboto",
-    fontSize: "24px",
+    font: "Medium 16px/24px Roboto",
+    fontSize: "16px",
     letterSpacing: "0px",
     color: "#EEEEEE",
     opacity: 1,
