@@ -15,11 +15,11 @@ export default function Logo() {
     <SvgIcon className={classes.logo}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="104.131"
-        height="50"
-        viewBox="0 0 120 190"
+        width="150.131"
+        height="100"
+        viewBox="0 0 200 190"
       >
-        <g id="Group_17" data-name="Group 17" transform="translate(-325 -18)">
+        <g id="Group_17" data-name="Group 17" transform="translate(-410 -10)">
           <path
             id="Path_46"
             data-name="Path 46"

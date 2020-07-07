@@ -16,8 +16,8 @@ export default function Logo() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100"
-        height="30"
-        viewBox="0 0 100 30"
+        height="200"
+        viewBox="0 0 200 300"
       >
         <g id="Group_15" data-name="Group 15" transform="translate(-60 -10)">
           <path
