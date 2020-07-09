@@ -14,6 +14,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/school" component={Detail} />
+          <Route exact path="/profile" component={} />
+          <Route exact path="/login" component={} />
+          <Route exact path="/signup" component={} />
         </Switch>
       </main>
     </Fragment>
