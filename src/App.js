@@ -5,6 +5,9 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import { Route, Switch } from "react-router-dom";
 import Detail from "./pages/detail";
+import Profile from "./pages/profile";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
 
 function App() {
   return (
@@ -14,9 +17,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/school" component={Detail} />
-          <Route exact path="/profile" component={} />
-          <Route exact path="/login" component={} />
-          <Route exact path="/signup" component={} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup} />
         </Switch>
       </main>
     </Fragment>
