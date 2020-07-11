@@ -6,8 +6,8 @@ import NavBar from "./components/NavBar";
 import { Route, Switch } from "react-router-dom";
 import Detail from "./pages/detail";
 import Profile from "./pages/profile";
-import Login from "./pages/login";
-import Signup from "./pages/signup";
+import Login from "./pages/login.jsx";
+import Signup from "./pages/signup.jsx";
 
 function App() {
   return (
