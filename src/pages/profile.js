@@ -11,5 +11,9 @@ const useStyles = makeStyles({
 });
 export default function Profile() {
   const classes = useStyles();
-  return <h1 className={classes.title}>Profile</h1>;
+  return (
+    <div className={classes.title}>
+      <h1>Profile</h1>
+    </div>
+  );
 }
