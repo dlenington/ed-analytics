@@ -14,6 +14,15 @@ export default function Profile() {
   return (
     <div className={classes.title}>
       <h1>Profile</h1>
+      <Grid>
+        <Grid item sm/>
+    <Grid item sm>
+
+
+    </Grid>
+    <Grid item sm/>
+      
+      </Grid>
     </div>
   );
 }
