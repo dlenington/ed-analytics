@@ -17,7 +17,7 @@ export default function Profile() {
       <Grid>
         <Grid item sm/>
     <Grid item sm>
-
+Profile picuture
 
     </Grid>
     <Grid item sm/>
