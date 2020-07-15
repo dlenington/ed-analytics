@@ -18,10 +18,10 @@ export default function Profile() {
         <Grid item sm/>
     <Grid item sm>
 Profile picuture
-
     </Grid>
-    <Grid item sm/>
-      
+    <Grid item sm>
+    Profile Details
+    </Grid>
       </Grid>
     </div>
   );
