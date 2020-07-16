@@ -14,6 +14,9 @@ const useStyles = makeStyles({
     margin: "auto",
     width: '100px'
   },
+  card: {
+    margin: '20px'
+  }
 });
 export default function Profile() {
   const classes = useStyles();
@@ -25,14 +28,14 @@ export default function Profile() {
       <Grid container sm>
         <Grid item sm/>
     <Grid item sm>
-    <Card>
+    <Card className={classes.card}>
       <CardContent>
         Profile Picture
       </CardContent>
     </Card>
     </Grid>
     <Grid item sm>
-    <Card>
+    <Card className={classes.card}>
       <CardContent>
         Profile Details
       </CardContent>
