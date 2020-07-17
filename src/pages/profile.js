@@ -26,12 +26,16 @@ export default function Profile() {
       <h1>Profile</h1>
       </div>
       <Grid container sm>
-        <Grid item sm/>
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
         Profile Picture
       </CardContent>
+      <CardActions>
+        <Button>
+          Edit
+        </Button>
+      </CardActions>
     </Card>
     </Grid>
     <Grid item sm>
