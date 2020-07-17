@@ -41,7 +41,18 @@ export default function Profile() {
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
-        Profile Details
+        <Typography>
+          Profile Details
+        </Typography> 
+        <Typography>      
+          Name
+        </Typography>
+        <Typography>
+          Age   
+        </Typography>
+        <Typography>
+          Bio
+        </Typography>
       </CardContent>
     </Card>
 
