@@ -16,6 +16,9 @@ const useStyles = makeStyles({
   },
   card: {
     margin: '20px'
+  },
+  button: {
+    color: "#GGGGGG"
   }
 });
 export default function Profile() {
@@ -32,7 +35,7 @@ export default function Profile() {
         Profile Picture
       </CardContent>
       <CardActions>
-        <Button>
+        <Button className={classes.button}>
           Edit
         </Button>
       </CardActions>
