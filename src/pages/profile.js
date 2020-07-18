@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     margin: '20px'
   },
   button: {
-    color: "#GGGGGG"
+    color: "#2196f3"
   }
 });
 export default function Profile() {
@@ -35,7 +35,7 @@ export default function Profile() {
         Profile Picture
       </CardContent>
       <CardActions>
-        <Button className={classes.button}>
+        <Button variant="contained" className={classes.button}>
           Edit
         </Button>
       </CardActions>
