@@ -35,7 +35,7 @@ export default function Profile() {
         Profile Picture
       </CardContent>
       <CardActions>
-        <Button variant="contained" className={classes.button}>
+        <Button variant="contained" >
           Edit
         </Button>
       </CardActions>
