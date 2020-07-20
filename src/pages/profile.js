@@ -8,8 +8,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
+import themeFile from "../util/themeFile";
 
 const useStyles = makeStyles({
+  ...themeFile,
   title: {
     margin: "auto",
     width: '100px'
@@ -35,7 +37,7 @@ export default function Profile() {
         Profile Picture
       </CardContent>
       <CardActions>
-        <Button variant="contained" >
+        <Button variant="contained" className={classes.primary} >
           Edit
         </Button>
       </CardActions>
