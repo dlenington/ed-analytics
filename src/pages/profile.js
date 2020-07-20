@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     margin: '20px'
   },
   button: {
-    color: "#2196f3"
+    // color: "#2196f3"
   }
 });
 export default function Profile() {
