@@ -38,7 +38,7 @@ export default function Profile() {
         Profile Picture
       </CardContent>
       <CardActions>
-        <Button variant="contained" color={classes.primary} >
+        <Button variant="contained" color="primary" >
           Edit
         </Button>
       </CardActions>
