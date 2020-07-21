@@ -9,9 +9,10 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import themeFile from "../util/themeFile";
+import blue from '@material-ui/core/colors/blue';
 
 const useStyles = makeStyles({
-  ...themeFile,
+  // ...themeFile,
   title: {
     margin: "auto",
     width: '100px'
@@ -20,7 +21,7 @@ const useStyles = makeStyles({
     margin: '20px'
   },
   button: {
-    // color: "#2196f3"
+   color: blue
   }
 });
 export default function Profile() {
@@ -37,7 +38,7 @@ export default function Profile() {
         Profile Picture
       </CardContent>
       <CardActions>
-        <Button variant="contained" className={classes.primary} >
+        <Button variant="contained" className={classes.button} >
           Edit
         </Button>
       </CardActions>
