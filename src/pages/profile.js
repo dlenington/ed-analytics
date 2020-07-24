@@ -48,7 +48,9 @@ export default function Profile() {
     <Card className={classes.card}>
       <CardContent>
         <Typography>
-          Profile Details
+          <List>
+            
+          </List>
         </Typography> 
         <Typography>      
           Name
@@ -61,7 +63,6 @@ export default function Profile() {
         </Typography>
       </CardContent>
     </Card>
-
     </Grid>
       </Grid>
     </div>
