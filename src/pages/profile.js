@@ -10,6 +10,12 @@ import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import themeFile from "../util/themeFile";
 import blue from '@material-ui/core/colors/blue';
+import { makeStyles } from '@material-ui/core/styles';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import { FixedSizeList } from 'react-window';
+
+
 
 const useStyles = makeStyles((theme) => ({
   // ...themeFile,
@@ -49,7 +55,7 @@ export default function Profile() {
       <CardContent>
         <Typography>
           <List>
-            
+
           </List>
         </Typography> 
         <Typography>      
