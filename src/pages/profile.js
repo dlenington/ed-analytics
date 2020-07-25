@@ -15,8 +15,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { FixedSizeList } from 'react-window';
 
-
-
 const useStyles = makeStyles((theme) => ({
   // ...themeFile,
   title: {
@@ -54,9 +52,9 @@ export default function Profile() {
     <Card className={classes.card}>
       <CardContent>
         <Typography>
-          <List>
-
-          </List>
+          <FixedSizeList height={400} width={300} itemSize={50} itemCount={10}>
+            {renderRow}
+          </FixedSizeList>
         </Typography> 
         <Typography>      
           Name
