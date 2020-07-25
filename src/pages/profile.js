@@ -1,5 +1,5 @@
 import React from "react";
-
+import List from "../components/List";
 
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
@@ -10,7 +10,6 @@ import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import themeFile from "../util/themeFile";
 import blue from '@material-ui/core/colors/blue';
-import { makeStyles } from '@material-ui/core/styles';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { FixedSizeList } from 'react-window';
@@ -51,11 +50,12 @@ export default function Profile() {
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
-        <Typography>
+        {/* <Typography>
           <FixedSizeList height={400} width={300} itemSize={50} itemCount={10}>
             {renderRow}
           </FixedSizeList>
-        </Typography> 
+        </Typography>  */}
+        <List/>
         <Typography>      
           Name
         </Typography>
