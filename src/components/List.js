@@ -18,7 +18,12 @@ function renderRow(props) {
   const { index, style } = props;
   return (
     <ListItem button style={style} key={index}>
-      <ListItemText primary={`Item ${index + 1}`} />
+      {contents.map(content => {
+        <ListItemText primary={`Item ${index + 1}`}>
+          {content.body}
+        </ListItemText>
+      })
+}
     </ListItem>
   );
 }
