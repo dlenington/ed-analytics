@@ -8,7 +8,7 @@ import { FixedSizeList } from 'react-window';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    height: 400,
+    height: 500,
     maxWidth: 300,
     backgroundColor: theme.palette.background.paper,
   },
