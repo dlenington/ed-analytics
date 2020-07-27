@@ -16,14 +16,15 @@ const useStyles = makeStyles((theme) => ({
 
 function renderRow(props) {
   const { index, style } = props;
+  
+  const contents = [{body: 1},
+                    {body: 2},
+                  {body: 3}];
   return (
     <ListItem button style={style} key={index}>
       {contents.map(content => {
-        <ListItemText primary={`Item ${index + 1}`}>
-          {content.body}
-        </ListItemText>
-      })
-}
+        <ListItemText primary={`${content.body}`}/>
+      })}
     </ListItem>
   );
 }
