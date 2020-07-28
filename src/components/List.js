@@ -21,11 +21,11 @@ function renderRow(props) {
                     {body: 2},
                   {body: 3}];
   return (
+    contents.map(content => {
     <ListItem button style={style} key={index}>
-      {contents.map(content => {
         <ListItemText primary={`${content.body}`}/>
-      })}
     </ListItem>
+  })
   );
 }
 
