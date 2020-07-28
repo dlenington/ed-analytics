@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import { FixedSizeList } from 'react-window';
+import { FixedSizeList as List } from 'react-window';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,18 +14,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+const contentsArray = [
+{body: 1},
+{body: 2},
+{body: 3}];
+
 function renderRow(props) {
   const { index, style } = props;
-  
-  const contents = [{body: 1},
-                    {body: 2},
-                  {body: 3}];
-  return (
-    contents.map(content => {
+  return (    
     <ListItem button style={style} key={index}>
-        <ListItemText primary={`${content.body}`}/>
+        <ListItemText primary={contentsArray[index].body}/>
     </ListItem>
-  })
   );
 }
 
@@ -39,9 +39,9 @@ export default function VirtualizedList() {
 
   return (
     <div className={classes.root}>
-      <FixedSizeList height={400} width={300} itemSize={46} itemCount={200}>
+      <List height={400} width={300} itemSize={46} itemCount={200}>
         {renderRow}
-      </FixedSizeList>
+      </List>
     </div>
   );
 }
