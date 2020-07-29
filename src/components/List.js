@@ -22,8 +22,18 @@ function renderRow(props) {
   const contentsArray = [
     {body: 1},
     {body: 2},
-    {body: 3}];
+    {body: 3},
+    {body: 3},
+    {body: 4},
+    {body: 5},
+    {body: 6},
+    {body: 7},
+    {body: 8},
+    {body: 9},
+  ];
+    console.log(index);
   return (    
+    
     <ListItem button style={style} key={index}>
         <ListItemText primary={contentsArray[index].body}/>
     </ListItem>
@@ -40,7 +50,8 @@ export default function VirtualizedList() {
 
   return (
     <div className={classes.root}>
-      <List height={400} width={300} itemSize={46} itemCount={200}>
+      <List height={400} width={300} itemSize={46} itemCount={8
+      }>
         {renderRow}
       </List>
     </div>
