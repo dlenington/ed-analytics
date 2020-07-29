@@ -50,8 +50,7 @@ export default function VirtualizedList() {
 
   return (
     <div className={classes.root}>
-      <List height={400} width={300} itemSize={46} itemCount={8
-      }>
+      <List height={400} width={300} itemSize={46} itemCount={8}>
         {renderRow}
       </List>
     </div>
