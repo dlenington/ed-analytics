@@ -15,13 +15,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const contentsArray = [
-{body: 1},
-{body: 2},
-{body: 3}];
+
 
 function renderRow(props) {
   const { index, style } = props;
+  const contentsArray = [
+    {body: 1},
+    {body: 2},
+    {body: 3}];
   return (    
     <ListItem button style={style} key={index}>
         <ListItemText primary={contentsArray[index].body}/>
