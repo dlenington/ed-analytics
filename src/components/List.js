@@ -30,6 +30,10 @@ function renderRow(props) {
     {body: 7},
     {body: 8},
     {body: 9},
+    {body: 9},
+    {body: 9},
+    {body: 9},
+    {body: 9},
   ];
     console.log(index);
   return (    
@@ -50,7 +54,7 @@ export default function VirtualizedList() {
 
   return (
     <div className={classes.root}>
-      <List height={400} width={300} itemSize={46} itemCount={8}>
+      <List height={400} width={300} itemSize={50} itemCount={14}>
         {renderRow}
       </List>
     </div>

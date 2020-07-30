@@ -39,6 +39,15 @@ export default function Profile() {
     <Card className={classes.card}>
       <CardContent>
         Profile Picture
+        <Typography>      
+          Name
+        </Typography>
+        <Typography>
+          Age   
+        </Typography>
+        <Typography>
+          Bio
+        </Typography>
       </CardContent>
       <CardActions>
         <Button variant="contained" color="primary">
@@ -56,15 +65,6 @@ export default function Profile() {
           </FixedSizeList>
         </Typography>  */}
         <List/>
-        <Typography>      
-          Name
-        </Typography>
-        <Typography>
-          Age   
-        </Typography>
-        <Typography>
-          Bio
-        </Typography>
       </CardContent>
     </Card>
     </Grid>
