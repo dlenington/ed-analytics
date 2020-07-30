@@ -35,9 +35,7 @@ function renderRow(props) {
     {body: 9},
     {body: 9},
   ];
-    console.log(index);
   return (    
-    
     <ListItem button style={style} key={index}>
         <ListItemText primary={contentsArray[index].body}/>
     </ListItem>
@@ -54,7 +52,7 @@ export default function VirtualizedList() {
 
   return (
     <div className={classes.root}>
-      <List height={400} width={300} itemSize={50} itemCount={14}>
+      <List height={400} width={300} itemSize={45} itemCount={14}>
         {renderRow}
       </List>
     </div>
