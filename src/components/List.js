@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 function renderRow(props) {
   const { index, style } = props;
   const contentsArray = [
-    {body: 1},
+    {body: 'hello'},
     {body: 2},
     {body: 3},
     {body: 3},
@@ -37,7 +37,7 @@ function renderRow(props) {
   ];
   return (    
     <ListItem button style={style} key={index}>
-        <ListItemText primary={index}/>
+        <ListItemText primary={contentsArray[index].body}/>
     </ListItem>
   );
 }

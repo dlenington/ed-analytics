@@ -59,6 +59,7 @@ export default function Profile() {
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
+        <Typography></Typography>
         {/* <Typography>
           <FixedSizeList height={400} width={300} itemSize={50} itemCount={10}>
             {renderRow}
