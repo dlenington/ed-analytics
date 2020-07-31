@@ -37,7 +37,7 @@ function renderRow(props) {
   ];
   return (    
     <ListItem button style={style} key={index}>
-        <ListItemText primary={contentsArray[index].body}/>
+        <ListItemText primary={index}/>
     </ListItem>
   );
 }
