@@ -38,8 +38,10 @@ export default function Profile() {
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
+        <Typography variant="h2">
         Profile Picture
-        <Typography>      
+        </Typography>
+        <Typography text="secondary">      
           Name
         </Typography>
         <Typography>
@@ -59,12 +61,9 @@ export default function Profile() {
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
-        <Typography></Typography>
-        {/* <Typography>
-          <FixedSizeList height={400} width={300} itemSize={50} itemCount={10}>
-            {renderRow}
-          </FixedSizeList>
-        </Typography>  */}
+        <Typography>
+
+        </Typography>
         <List/>
       </CardContent>
     </Card>
