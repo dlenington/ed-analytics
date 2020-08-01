@@ -32,7 +32,7 @@ export default function Profile() {
   return (
     <div>
     <div className={classes.title}>
-      <h1>Profile</h1>
+      <Typography variant="h2">Profile</Typography>
       </div>
       <Grid container sm>
     <Grid item sm>
