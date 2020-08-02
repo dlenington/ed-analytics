@@ -42,13 +42,13 @@ export default function Profile() {
         Profile Picture
         </Typography>
         <Typography text="secondary">      
-          Name
+          Dan
         </Typography>
         <Typography>
-          Age   
+          24   
         </Typography>
         <Typography>
-          Bio
+          This is my bio
         </Typography>
       </CardContent>
       <CardActions>
