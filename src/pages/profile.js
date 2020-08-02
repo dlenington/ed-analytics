@@ -61,8 +61,8 @@ export default function Profile() {
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
-        <Typography>
-
+        <Typography variant="h3">
+          Activity Feed
         </Typography>
         <List/>
       </CardContent>
