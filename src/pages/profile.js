@@ -39,7 +39,7 @@ export default function Profile() {
     <Card className={classes.card}>
       <CardContent>
         <Typography variant="h2">
-        Profile Picture
+        Profile IMG
         </Typography>
         <Typography text="secondary">      
           Dan
