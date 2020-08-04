@@ -14,13 +14,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
-
-
 function renderRow(props) {
   const { index, style } = props;
   const contentsArray = [
-    {body: 'hello'},
     {body: 2},
     {body: 3},
     {body: 3},
