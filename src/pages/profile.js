@@ -32,7 +32,7 @@ export default function Profile() {
   return (
     <div>
     <div className={classes.title}>
-      <Typography variant="h2">Profile Page</Typography>
+      <Typography variant="h2">Profile</Typography>
       </div>
       <Grid container sm>
     <Grid item sm>
@@ -51,6 +51,7 @@ export default function Profile() {
           This is my bio
         </Typography>
       </CardContent>
+      <List/>
       <CardActions>
         <Button variant="contained" color="primary">
           Edit
