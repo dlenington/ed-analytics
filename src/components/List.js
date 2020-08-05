@@ -30,6 +30,7 @@ function renderRow(props) {
     {body: 9},
     {body: 9},
     {body: 9},
+    {body: 9},
   ];
   return (    
     <ListItem button style={style} key={index}>
