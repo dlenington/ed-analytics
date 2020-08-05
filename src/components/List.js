@@ -17,24 +17,66 @@ const useStyles = makeStyles((theme) => ({
 function renderRow(props) {
   const { index, style } = props;
   const contentsArray = [
-    {body: 2},
-    {body: 3},
-    {body: 3},
-    {body: 4},
-    {body: 5},
-    {body: 6},
-    {body: 7},
-    {body: 8},
-    {body: 9},
-    {body: 9},
-    {body: 9},
-    {body: 9},
-    {body: 9},
-    {body: 9},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
+    {body: {
+      name: "name",
+      bio: "Example bio"
+    }},
   ];
   return (    
     <ListItem button style={style} key={index}>
-        <ListItemText primary={contentsArray[index].body}/>
+        <ListItemText primary={contentsArray[index].body.bio}/>
     </ListItem>
   );
 }
