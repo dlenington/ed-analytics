@@ -51,7 +51,6 @@ export default function Profile() {
           This is my bio
         </Typography>
       </CardContent>
-      <List/>
       <CardActions>
         <Button variant="contained" color="primary">
           Edit
