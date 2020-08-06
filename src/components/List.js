@@ -76,6 +76,7 @@ function renderRow(props) {
   ];
   return (    
     <ListItem button style={style} key={index}>
+        <ListItemText primary={contentsArray[index].body.name}/>
         <ListItemText primary={contentsArray[index].body.bio}/>
     </ListItem>
   );
