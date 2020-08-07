@@ -8,8 +8,6 @@ import School from "../components/School";
 
 function Home() {
   const [schools, setSchools] = useState([]);
-
-  //call cleanup method to set isMounted to false;
   useEffect(() => {
     async function getSchools() {
       const result = await axios("https://jsonplaceholder.typicode.com/users");
