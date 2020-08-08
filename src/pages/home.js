@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import School from "../components/School";
+import { List } from "@material-ui/core";
 
 function Home() {
   const [schools, setSchools] = useState([]);
@@ -22,9 +23,10 @@ function Home() {
   return (
     <Grid container spacing={2}>
       <Grid item sm={12} xs={12}>
-        {schools.map((school) => (
+        {/* {schools.map((school) => (
           <School key={school.id} school={school} />
-        ))}
+        ))} */}
+        <List array={schools}/>
       </Grid>
     </Grid>
   );

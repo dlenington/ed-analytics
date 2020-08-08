@@ -16,67 +16,10 @@ const useStyles = makeStyles((theme) => ({
 
 function renderRow(props) {
   const { index, style } = props;
-  const contentsArray = [
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-    {body: {
-      name: "name",
-      bio: "Example bio"
-    }},
-  ];
+  const contentsArray = props.array;
   return (    
     <ListItem button style={style} key={index}>
-        <ListItemText primary={contentsArray[index].body.name}/>
+        <ListItemText primary={contentsArray[index]}/>
         <ListItemText primary={contentsArray[index].body.bio}/>
     </ListItem>
   );
