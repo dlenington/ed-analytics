@@ -18,6 +18,7 @@ function Home() {
   }, [schools]);
 
   //Use react window to display the schools array
+  //List component encapsulating this logic
   return (
     <Grid container spacing={2}>
       <Grid item sm={12} xs={12}>
