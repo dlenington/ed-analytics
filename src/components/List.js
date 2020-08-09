@@ -16,11 +16,11 @@ const useStyles = makeStyles((theme) => ({
 
 function renderRow(props) {
   const { index, style } = props;
-  const contentsArray = props.array;
+  const {array} = props;
   return (    
     <ListItem button style={style} key={index}>
-        <ListItemText primary={contentsArray[index]}/>
-        <ListItemText primary={contentsArray[index].body.bio}/>
+        <ListItemText primary={array[index]}/>
+        <ListItemText primary={array[index]}/>
     </ListItem>
   );
 }
