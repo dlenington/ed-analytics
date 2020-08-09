@@ -15,11 +15,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function renderRow(props) {
-  const { index, style } = props;
-  const {array} = props;
+  const { index, style, array } = props;
   return (    
     <ListItem button style={style} key={index}>
-        <ListItemText primary={array[index]}/>
         <ListItemText primary={array[index]}/>
     </ListItem>
   );
@@ -28,9 +26,10 @@ function renderRow(props) {
 renderRow.propTypes = {
   index: PropTypes.number.isRequired,
   style: PropTypes.object.isRequired,
+  array: PropTypes.array.isRequired,
 };
 
-export default function VirtualizedList() {
+export default function VirtualizedList(props) {
   const classes = useStyles();
 
   return (
