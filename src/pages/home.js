@@ -23,9 +23,6 @@ function Home() {
   return (
     <Grid container spacing={2}>
       <Grid item sm={12} xs={12}>
-        {/* {schools.map((school) => (
-          <School key={school.id} school={school} />
-        ))} */}
         <List array={schools}/>
       </Grid>
     </Grid>
