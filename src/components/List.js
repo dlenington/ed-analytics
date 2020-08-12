@@ -22,7 +22,7 @@ function renderRow(props) {
     </ListItem>
   );
 }
-
+//determine how these props are passed in
 renderRow.propTypes = {
   index: PropTypes.number.isRequired,
   style: PropTypes.object.isRequired,
