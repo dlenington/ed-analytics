@@ -14,7 +14,6 @@ function Home() {
     getSchools();
   }, [schools]);
 
-
   return (
     <Grid container spacing={2}>
       <Grid item sm={12} xs={12}>
