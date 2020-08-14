@@ -32,7 +32,6 @@ renderRow.propTypes = {
 
 export default function VirtualizedList(props) {
   const classes = useStyles();
-  const {array} = props;
 //need to pass array from props here
   return (
     <div className={classes.root}>
