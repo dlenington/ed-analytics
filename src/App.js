@@ -4,8 +4,6 @@ import themeFile from './util/themeFile';
 import "./App.css";
 import NavBar from "./components/NavBar";
 import { Route, Switch } from "react-router-dom";
-
-
 import Detail from "./pages/detail";
 import Profile from "./pages/profile";
 import Login from "./pages/login.jsx";

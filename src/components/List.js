@@ -36,7 +36,6 @@ export default function VirtualizedList(props) {
   return (
     <div className={classes.root}>
       <List height={400} width={300} itemSize={45} itemCount={14}>
-        
         {renderRow}
       </List>
     </div>
