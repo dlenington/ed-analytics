@@ -23,7 +23,7 @@ function renderRow(props) {
     </ListItem>
   );
 }
-//determine how these props are passed in
+
 renderRow.propTypes = {
   index: PropTypes.number.isRequired,
   style: PropTypes.object.isRequired,
@@ -32,10 +32,9 @@ renderRow.propTypes = {
 
 export default function VirtualizedList(props) {
   const classes = useStyles();
-//need to pass array from props here
+
   return (
     <div className={classes.root}>
-  
       <List height={400} width={300} itemSize={45} itemCount={14}>
         
         {renderRow}
