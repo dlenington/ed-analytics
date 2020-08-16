@@ -19,7 +19,7 @@ function renderRow(props) {
   const {array} = props;
   return (    
     <ListItem button style={style} key={index}>
-        <ListItemText primary={array[index]}/>
+        <ListItemText primary={"hello"}/>
     </ListItem>
   );
 }
