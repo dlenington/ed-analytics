@@ -16,19 +16,9 @@ const Login = () => {
   const classes = useStyles();
   return (
     <Fragment>
-    <Grid container>
-      <Grid item sm>
-    
+    <Grid container justify="center">
+        <Typography className={classes.title} variant="h3">Login</Typography>
       </Grid>
-      <Grid item sm>
-    <Typography>
-      Login Section
-    </Typography>
-      </Grid>
-      <Grid item sm>
-    
-      </Grid>
-    </Grid>
 
     <Grid container>
       <Grid item sm>
