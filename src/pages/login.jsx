@@ -39,12 +39,12 @@ const Login = () => {
     
       </Grid>
     </Grid>
-    </Fragment>
 
 
     <Grid container justify="center">
-    <Button variant="contained">Login</Button>
-      </Grid>
+    <Button variant="contained" className={classes.button}>Login</Button>
+    </Grid>
+    </Fragment>
     );
 };
 
