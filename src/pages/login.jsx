@@ -23,9 +23,15 @@ const Login = () => {
     <Grid container justify="center">
       <Typography className={classes.title} variant="h3">Login</Typography>
     </Grid>
+
     <Grid container justify="center">
+      <Typography>
       <TextField className={classes.field} label="username"/>
+      </Typography>
+      <Typography>
       <TextField className={classes.field} label="password"/>
+      </Typography>
+
     </Grid>
     
     <Grid container justify="center">
