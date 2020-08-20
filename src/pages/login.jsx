@@ -23,24 +23,11 @@ const Login = () => {
     <Grid container justify="center">
       <Typography className={classes.title} variant="h3">Login</Typography>
     </Grid>
-
-    <Grid container>
-      <Grid item sm>
-    
-      </Grid>
-      <Grid item sm>
-    <Typography>
-      <TextField className={classes.field} label="username"/> <br/>
+    <Grid container justify="center">
+      <TextField className={classes.field} label="username"/>
       <TextField className={classes.field} label="password"/>
-    </Typography>
-    
-      </Grid>
-      <Grid item sm>
-    
-      </Grid>
     </Grid>
-
-
+    
     <Grid container justify="center">
     <Button variant="contained" className={classes.button}>Login</Button>
     </Grid>
