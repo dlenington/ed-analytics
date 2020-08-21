@@ -28,6 +28,8 @@ const Login = () => {
      <form noValidate>
        <div>
        <TextField className={classes.field} label="username"/>
+       </div>
+       <div>
        <TextField className={classes.field} label="password"/>
        </div>
      </form>
