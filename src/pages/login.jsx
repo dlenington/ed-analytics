@@ -10,9 +10,6 @@ const useStyles = makeStyles((theme) => ({
  field: {
    margin: '0px 0px 20px'
  },
- button: {
-   color: blue
- }
 }));
 
 
@@ -39,7 +36,7 @@ const Login = () => {
     </Grid>
     
     <Grid container justify="center">
-    <Button variant="contained" className={classes.button}>Login</Button>
+    <Button variant="contained" color="primary" >Login</Button>
     </Grid>
     </Fragment>
     );
