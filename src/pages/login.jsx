@@ -27,10 +27,10 @@ const Login = () => {
     <Grid container justify="center">
      <form noValidate>
        <div>
-       <TextField className={classes.field} label="username"/>
+       <TextField className={classes.field} label="Username"/>
        </div>
        <div>
-       <TextField className={classes.field} label="password"/>
+       <TextField className={classes.field} label="Password"/>
        </div>
      </form>
      
