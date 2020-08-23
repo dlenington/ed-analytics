@@ -18,7 +18,7 @@ const Signup = () => {
   return (
     <Fragment>
     <Grid container justify="center">
-      <Typography className={classes.title} variant="h3">Login</Typography>
+      <Typography className={classes.title} variant="h3">Signup</Typography>
     </Grid>
 
     <Grid container justify="center">
