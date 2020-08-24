@@ -23,12 +23,19 @@ const Signup = () => {
 
     <Grid container justify="center">
      <form noValidate>
+      <div>
+       <TextField className={classes.field} label="Email"/>
+       </div>
        <div>
        <TextField className={classes.field} label="Username"/>
        </div>
        <div>
        <TextField className={classes.field} label="Password"/>
        </div>
+       <div>
+       <TextField className={classes.field} label="Confirm Password"/>
+       </div>
+       
      </form>
      
       
