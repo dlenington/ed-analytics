@@ -5,6 +5,7 @@ import Button from "@material-ui/core/Button";
 import TextField from '@material-ui/core/TextField';
 import Typography from "@material-ui/core/Typography";
 import blue from '@material-ui/core/colors/blue';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
  field: {
@@ -34,12 +35,9 @@ const Signup = () => {
        </div>
        <div>
        <TextField className={classes.field} label="Confirm Password"/>
-       </div>
-       
+       </div> 
+     <Typography>Have an account?<Link>Login</Link></Typography>
      </form>
-     
-      
-
     </Grid>
     
     <Grid container justify="center">
