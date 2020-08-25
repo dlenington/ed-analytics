@@ -32,13 +32,13 @@ export default function Profile() {
   return (
     <div>
     <div className={classes.title}>
-      <Typography variant="h2">Profile</Typography>
+      <Typography variant="h3">Profile</Typography>
       </div>
       <Grid container sm>
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
-        <Typography variant="h2">
+        <Typography variant="h4">
         Profile IMG
         </Typography>
         <Typography text="secondary">      
@@ -61,7 +61,7 @@ export default function Profile() {
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
-        <Typography variant="h3">
+        <Typography variant="h4">
           Activity
         </Typography>
         <List/>
