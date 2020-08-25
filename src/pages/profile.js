@@ -62,7 +62,7 @@ export default function Profile() {
     <Card className={classes.card}>
       <CardContent>
         <Typography variant="h3">
-          Activity Feed
+          Activity
         </Typography>
         <List/>
       </CardContent>
