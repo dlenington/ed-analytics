@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
+import Avatar from '@material-ui/core/Avatar';
 import themeFile from "../util/themeFile";
 import blue from '@material-ui/core/colors/blue';
 import ListItem from '@material-ui/core/ListItem';
@@ -38,9 +39,7 @@ export default function Profile() {
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
-        <Typography variant="h4">
-        Profile IMG
-        </Typography>
+        <Avatar>D</Avatar>
         <Typography text="secondary">      
           Dan
         </Typography>
