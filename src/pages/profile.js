@@ -39,10 +39,13 @@ export default function Profile() {
     <Grid item sm>
     <Card className={classes.card}>
       <CardContent>
-        <Avatar>D</Avatar>
+        <div>
+        
         <Typography text="secondary">      
-          Dan
+        <Avatar>D</Avatar>Dan
         </Typography>
+        </div>
+        
         <Typography>
           24   
         </Typography>
