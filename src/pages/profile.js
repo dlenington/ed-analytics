@@ -54,9 +54,6 @@ export default function Profile() {
         </Typography>
         </div>
         <Typography>
-          24   
-        </Typography>
-        <Typography>
           This is my bio
         </Typography>
       </CardContent>
