@@ -15,6 +15,8 @@ import blue from '@material-ui/core/colors/blue';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { FixedSizeList } from 'react-window';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+import IconButton from '@material-ui/core/IconButton';
 
 const useStyles = makeStyles((theme) => ({
   // ...themeFile,
@@ -42,6 +44,11 @@ export default function Profile() {
       <CardHeader
       avatar={
         <Avatar>D</Avatar>
+      }
+      action={
+        <IconButton aria-label="settings">
+          <MoreVertIcon />
+        </IconButton>
       }
       title="Dan"
       subheader="Profile card"
