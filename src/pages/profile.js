@@ -60,7 +60,7 @@ export default function Profile() {
         
         </Typography>
         </div>
-        <Typography>
+        <Typography variant="body2">
           This is my bio
         </Typography>
       </CardContent>
