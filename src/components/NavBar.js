@@ -7,6 +7,7 @@ import { makeStyles, Typography } from "@material-ui/core";
 import Logo from "../icons/LogoLg";
 import MyMenu from "./MyMenu";
 import { Link } from "react-router-dom";
+import InputBase from '@material-ui/core/InputBase';
 
 const useStyles = makeStyles({
   grow: {
