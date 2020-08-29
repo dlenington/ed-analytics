@@ -44,6 +44,19 @@ export default function NavBar() {
             <Logo />
           </Button>
         </Link>
+        <div className={classes.search}>
+          <div className={classes.searchIcon}>
+            <SearchIcon/>
+          </div>  
+          <InputBase
+          placeholder="Search…"
+          classes={{
+            root: classes.inputRoot,
+            input: classes.inputInput,
+          }}
+          inputProps={{ 'aria-label': 'search' }}
+          />
+        </div>
         <div className={classes.grow}></div>
         <Link to="/" className={classes.navLink}>
           <Button className={classes.navText}>Home</Button>
