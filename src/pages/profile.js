@@ -34,6 +34,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function Profile() {
   const classes = useStyles();
+  const array = [
+    {name: 'dan'},
+    {name: 'dan'},
+    {name: 'dan'},
+    {name: 'dan'},
+    {name: 'dan'},
+    {name: 'dan'},
+    {name: 'dan'},
+    {name: 'dan'},
+    {name: 'dan'},
+  ];
   return (
     <div>
     <div className={classes.title}>
@@ -78,7 +89,7 @@ export default function Profile() {
         <Typography variant="h4">
           Activity
         </Typography>
-        <List/>
+        <List array={array}/>
       </CardContent>
     </Card>
     </Grid>
